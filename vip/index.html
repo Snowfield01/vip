@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/swiper-5.3.6/package/css/swiper.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="serch">
+            <span>登录</span> <input type="text">
+
+            <img src="images/worker.svg" alt="">
+            <div class="nav" >
+                <div class="container">
+                    <div class="ul-wrapper">
+                    <ul class="nav nav-tabs" role="tablist" width='500'>
+                      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">今日推荐</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">最后疯抢</a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">国际</a></li>
+                      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">商贸</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">美妆</a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">生活</a></li>
+                      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">服务 </a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- loop -->
+    <div class="loop">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/loop01.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/loop02.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/loop03.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- showList -->
+    <div class="showList">
+        <ul>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+            <li><img src="images/nav0.png" alt=""><p>男装</p></li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="d1"> <img src="images/fontPage.png" alt="" id="pic1"></div>
+        <div class="footShow">
+            <ul>
+                <li><img src="images/product01.png" alt=""></li>
+                <li><img src="images/product01.png" alt=""></li>
+                <li><img src="images/product01.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="lib/js/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="./lib/swiper-5.3.6/package/js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: true,
+        direction: 'horizontal',
+        speed: 1000,
+    });
+</script>
+</html>
